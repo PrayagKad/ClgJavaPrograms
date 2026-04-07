@@ -42,4 +42,12 @@ public class EmployeeController {
         String status = employeeService.delete();
         System.out.println(status);
     }
+
+    public void findByID(int id) {
+
+            Employee emp  = employeeService.findByID(id);
+        System.out.println(emp);
+
+
+    }
 }

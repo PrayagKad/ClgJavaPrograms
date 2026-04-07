@@ -40,6 +40,9 @@ public class MISApplication {
                     controller.deleteEmployee();
                             break;
                 case 5:
+                    System.out.println(" enter employee id ....");
+                    int id = sn.nextInt();
+                    controller.findByID(id);
                     break;
                 case 6:
                     break;

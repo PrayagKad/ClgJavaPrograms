@@ -47,14 +47,11 @@ public class EmployeeDao {
         try {
             conn = DButil.getConnection();
             psmt = conn.prepareStatement("select * from employee");
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        try {
             return psmt.executeQuery();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+
          }
 
     public Status updateEmployee(Employee emp) throws SQLException {
@@ -90,4 +87,24 @@ public class EmployeeDao {
 
         return status;
     }
+
+    public Employee findById(int id) throws SQLException {
+        conn = DButil.getConnection();
+        psmt = conn.prepareStatement("select * from employee where id=?");
+        psmt.setInt(1, id);
+        Employee emp = new Employee();
+        ResultSet rs = psmt.executeQuery();
+
+
+        while (rs.next()) {
+            emp.setEmpId(rs.getInt(1));
+            emp.setEmpName(rs.getString(2));
+            emp.setSalary(rs.getInt("salary"));
+            emp.setDept(rs.getString("department"));
+        }
+
+        return emp;
+    }
+
+
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/HBM_one_to_many/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/MTM/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringBootWelcome" />
+        <module name="HBM" />
+        <module name="Many_to_Many" />
+        <module name="ProductApp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ear" target="1.5" />
+      <module name="ejbs" target="1.8" />
+      <module name="HBM_one_to-" target="1.8" />
+      <module name="HBM_One_to_One" target="21" />
+      <module name="HBM_one_to_one" target="21" />
+      <module name="logging" target="1.8" />
+      <module name="many_to_man" target="21" />
+      <module name="many_to_many" target="21" />
+      <module name="Many_To_many" target="1.8" />
+      <module name="Many_to_many" target="21" />
+      <module name="MTM" target="21" />
+      <module name="MTMm" target="1.8" />
+      <module name="primary-source" target="1.8" />
+      <module name="projects" target="1.5" />
+      <module name="servlet" target="1.8" />
+      <module name="servlets" target="1.5" />
+      <module name="Spring" target="1.8" />
+      <module name="Spring-Collection-Injection" target="1.8" />
+      <module name="spring.ioo.ci" target="1.5" />
+      <module name="SpringIOC" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="HBM" options="-parameters" />
+      <module name="HBM_One_to_One" options="-parameters" />
+      <module name="Many_to_many" options="-parameters" />
+      <module name="ProductApp" options="-parameters" />
+      <module name="SpringBootWelcome" options="-parameters" />
+    </option>
+  </component>
+</project>

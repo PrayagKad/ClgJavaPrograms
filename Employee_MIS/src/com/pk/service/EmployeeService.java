@@ -95,5 +95,32 @@ public class EmployeeService {
         return response;
 
     }
+
+    public Employee findByID(int id) {
+        String response = "";
+
+        Employee employee = new Employee();
+        try {
+
+
+            employee = dao.findById(id);
+
+            Status status = null;
+
+            if (status == Status.SUCCESS)
+                System.out.println("Employee found successfully ....");
+
+            else if (status == Status.FAIL)
+                System.out.println( " Employee not found ......");
+
+            else
+                System.out.println( " infrs problem . check connection ...");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return employee;
+    }
 }
 
