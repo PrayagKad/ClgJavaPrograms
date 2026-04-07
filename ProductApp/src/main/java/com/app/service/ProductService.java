@@ -3,9 +3,11 @@ package com.app.service;
 import com.app.model.Product;
 import com.app.repository.ProductRepository;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductService {
@@ -37,5 +39,20 @@ public class ProductService {
             status = "fail delete";
         }
         return status;
+    }
+
+    public Product updateProduct(int id, Product product) {
+        Product pResponse  =repo.findById(id).get();
+
+        if(pResponse != null && !product.getName().isEmpty() && !product.getName().isBlank()){
+            pResponse.setName(product.getName());
+        } else if (pResponse!= null&& product.getPrice()!=0) {
+
+            pResponse.setPrice(product.getPrice());
+
+        }
+
+        return repo.save(pResponse);
+
     }
 }
