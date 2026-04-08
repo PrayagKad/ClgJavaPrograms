@@ -14,9 +14,11 @@
         <module name="HBM" />
         <module name="Many_to_Many" />
         <module name="ProductApp" />
+        <module name="SwaggerDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="BankMIcroService" target="21" />
       <module name="ear" target="1.5" />
       <module name="ejbs" target="1.8" />
       <module name="HBM_one_to-" target="1.8" />
@@ -24,9 +26,9 @@
       <module name="HBM_one_to_one" target="21" />
       <module name="logging" target="1.8" />
       <module name="many_to_man" target="21" />
+      <module name="Many_to_many" target="21" />
       <module name="many_to_many" target="21" />
       <module name="Many_To_many" target="1.8" />
-      <module name="Many_to_many" target="21" />
       <module name="MTM" target="21" />
       <module name="MTMm" target="1.8" />
       <module name="primary-source" target="1.8" />
@@ -37,15 +39,18 @@
       <module name="Spring-Collection-Injection" target="1.8" />
       <module name="spring.ioo.ci" target="1.5" />
       <module name="SpringIOC" target="1.8" />
+      <module name="SwaggerDemo" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="BankMIcroService" options="-parameters" />
       <module name="HBM" options="-parameters" />
       <module name="HBM_One_to_One" options="-parameters" />
       <module name="Many_to_many" options="-parameters" />
       <module name="ProductApp" options="-parameters" />
       <module name="SpringBootWelcome" options="-parameters" />
+      <module name="SwaggerDemo" options="-parameters" />
     </option>
   </component>
 </project>

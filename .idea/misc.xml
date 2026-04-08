@@ -21,16 +21,20 @@
         <option value="$PROJECT_DIR$/Spring-Collection-Injection/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootWelcome/pom.xml" />
         <option value="$PROJECT_DIR$/ProductApp/pom.xml" />
+        <option value="$PROJECT_DIR$/SwaggerDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/BankMIcroService/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/BankMIcroService/pom.xml" />
         <option value="$PROJECT_DIR$/Employee_MIS/many_to_many/pom.xml" />
         <option value="$PROJECT_DIR$/HBM_One_to_One/pom.xml" />
         <option value="$PROJECT_DIR$/HBM_one_to_many/pom.xml" />
         <option value="$PROJECT_DIR$/HBM_one_to_one/pom.xml" />
         <option value="$PROJECT_DIR$/MTM/pom.xml" />
         <option value="$PROJECT_DIR$/Many_to_many/pom.xml" />
+        <option value="$PROJECT_DIR$/SwaggerDemo/pom.xml" />
         <option value="$PROJECT_DIR$/demo/pom.xml" />
       </set>
     </option>
