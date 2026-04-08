@@ -45,7 +45,7 @@ public class AccountService {
 
     ///  add / deposit a amount inside the account
     public AccountResponse deposit(AccountRequest request) {
-        Account account = accountRepository.findByMobile(request.getMobileNo());
+        Account account = accountRepository.findByMobileNo(request.getMobileNo());
         if(account!=null){
             double balance = account.getBalance();
             account.setBalance(balance+request.getBalance());
@@ -64,8 +64,8 @@ public class AccountService {
 
 
     /// get account details using a mobile number
-    public AccountResponse GetAccountDetails(long mobileno) {
-        Account account = accountRepository.findByMobile(mobileno);
+    public AccountResponse GetAccountDetails(long mobileNo) {
+        Account account = accountRepository.findByMobileNo(mobileNo);
         if(account!=null){
 
 

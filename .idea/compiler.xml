@@ -14,6 +14,7 @@
         <module name="HBM" />
         <module name="Many_to_Many" />
         <module name="ProductApp" />
+        <module name="BankMicroservice" />
         <module name="SwaggerDemo" />
       </profile>
     </annotationProcessing>
@@ -45,6 +46,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="BankMIcroService" options="-parameters" />
+      <module name="BankMicroservice" options="-parameters" />
       <module name="HBM" options="-parameters" />
       <module name="HBM_One_to_One" options="-parameters" />
       <module name="Many_to_many" options="-parameters" />

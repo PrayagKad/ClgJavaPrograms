@@ -32,9 +32,9 @@ public class AccountController {
         return new ResponseEntity<AccountResponse>(accountResponse, HttpStatus.CREATED);
     }
 
-    @RequestMapping(value = "/getAccDetails/{mobileno}",method = RequestMethod.GET, produces = "application/json" , consumes = "application/json")
-    public ResponseEntity<AccountResponse> GetAccountDetails(@PathVariable long mobileno) {
-        AccountResponse accountResponse = accountService.GetAccountDetails(mobileno);
+    @RequestMapping(value = "/getAccDetails/{mobileNo}",method = RequestMethod.GET, produces = "application/json" , consumes = "application/json")
+    public ResponseEntity<AccountResponse> GetAccountDetails(@PathVariable long mobileNo) {
+        AccountResponse accountResponse = accountService.GetAccountDetails(mobileNo);
         return new ResponseEntity<AccountResponse>(accountResponse, HttpStatus.CREATED);
     }
 
